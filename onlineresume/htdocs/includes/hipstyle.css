@@ -1,0 +1,531 @@
+@charset "UTF-8";
+/* CSS Document */
+/* colors
+black: 			#1c1919
+red: 			#eb5937
+green:			#456f74
+pale:			#d3cbbd
+dark grey: 		#403d3c
+
+
+*/
+
+/********************************************
+				 Master Reset 
+*********************************************/
+
+body{
+/*	background: #000000;*/
+	background:  #000000 repeat;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 1px;
+	color: #d3cbbd;
+	width: 950px;
+	height: auto;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+div, h1, h2, h3, h4, h5, h6, p, ul, li {
+padding:0px;
+margin:0px;
+}
+
+html{
+overflow:-moz-scrollbars-vertical;
+}
+
+
+/********************************************
+				 Defaults
+*********************************************/
+
+table {
+/*border-collapse:collapse;*/
+}
+
+table tr td {
+padding:0px;
+margin:0px;
+}
+
+h1 /*red*/{
+font-size:18px;
+color:#eb5937;
+font-weight: bold;
+margin-bottom:10px;
+margin-top: 10px;
+text-align: center;
+}
+
+h2 /*green*/{
+font-size:20px;
+color:#456f74;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+h3 /*pale*/{
+font-size:18px;
+color:#d3cbbd;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+h4 /* white*/{
+font-size:18px;
+color:#fff;
+font-weight:lighter;
+margin-bottom:10px;
+}
+
+h5 /*pale*/ {
+font:12px;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-style:italic;
+color:#d3cbbd;
+font-weight:lighter;
+padding:0px;
+margin:0px 0px 2px 0px;
+}
+
+h6 /*white*/ {
+font:12px;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-style:italic;
+color:#fff;
+font-weight:lighter;
+padding:0px;
+margin:0px 0px 10px 0px;
+}
+
+p {
+margin-bottom:11px;
+letter-spacing:0px;
+}
+
+em /* emphasized text */{ 
+font:12px;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-style:italic;
+line-height:20px;
+font-weight:lighter;
+padding:0px;
+}
+
+a {
+color:#456f74;
+text-decoration:none;
+letter-spacing:1px;
+/*border-bottom:1px solid #EEEFE9;*/
+}
+
+a:hover {
+color:#eb5937;
+border-bottom:1px dotted #eb5937;
+}
+
+a:active, a:focus{
+outline:none;
+}
+
+a img,
+a:hover img,
+a:active img,
+a:focus img {
+border:none;
+margin:0px;
+padding:0px;
+text-decoration:none;
+}
+
+img a{
+border-bottom:none;
+margin:0px;
+padding:0px;
+}
+
+ul li {
+list-style:none;
+/*font-size:12px;*/
+}
+
+li {
+margin-bottom:2px;
+}
+
+li a {
+color:#456f74;
+}
+
+li a:hover {
+color:#eb5937;
+border-bottom:none;
+}	
+	
+/********************************************
+				 Helpful Classes
+*********************************************/
+	
+.force_break {
+clear:both;
+}
+
+.left_break {
+clear:inherit;
+}
+
+.left {
+float:left;
+}
+
+.right {
+float:right;
+}
+
+hr.wide {
+height:8px;
+background-color:#1c1919;
+border:none;
+margin:0px 0px 10px 0px;
+padding:0px;
+}
+
+hr.thin {
+height:1px;
+background-color:#1c1919;
+border:none;
+margin:0px 0px 15px 0px;
+padding:0px;
+}
+
+.image a,
+.image a:hover,
+.image a:focus,
+.image a:active {
+border:none;
+}	
+
+.bgblack_text_200 {
+	text-align:justify;
+	border:1px solid #eb5937;
+	padding:5px;
+	color:white;
+	background:black;
+	filter:alpha(opacity=90); /*ie?*/
+	opacity:.90;
+	
+
+}
+
+/********************************************
+				 Structure
+*********************************************/
+
+/* HEADER */
+#top{
+	//background: url(../images/header.jpg) top no-repeat;	
+	//put a pattern background here
+}
+
+#header {
+width:950px;
+margin:0px auto;
+height:136px;
+position:relative;  /*somehow this relative helps the other comoing absolutes */
+background: url(../images/header.jpg) left no-repeat;
+}
+
+/*#utility_tab {
+position:absolute;  --positions something in top right corner--
+top:0px;
+right:0px;
+}*/
+
+#nav {
+	bottom:-2px;
+	position:absolute; /*relative (inherited) and then absolute? */
+	right:0px;
+}
+
+/* DIVIDER */
+#divider {
+width: 950px;
+margin: 0px auto;
+height: 31px;
+background: url(../images/divider.jpg) left no-repeat;
+}
+
+/* CONTENT AREA */
+
+.contentbox {
+float:left;
+margin-bottom:30px;
+padding:0px;
+}
+
+#contentarea {
+width:950px;
+margin:0px auto;
+height: 633px;
+position:relative;  /*somehow this relative helps the other comoing absolutes */
+background:  url(../images/content.jpg) left no-repeat;
+}
+
+#content_left {
+width:620px;
+float:left;
+margin-bottom: 30px;
+padding:0px;
+}
+
+
+
+/* SIDEBAR AREA */
+#sidebar {
+width:250px;
+float:right;
+margin-left:30px;
+margin-bottom:30px;
+padding:0px;
+}
+
+/* translucent black bg */
+#content {
+width: 640px;
+height: 590px;
+margin: 12px 20px 20px 15px;
+}
+
+#about_me {
+width: 220px;
+height: 590px;
+margin: 12px 20px 20px 0px;
+}
+
+
+/* column design for the three columns*/
+.single_column {
+height:100%;
+width:200px;
+float:left;
+margin:0px;
+padding:0px;
+}
+
+.single_column_border {
+height:100%;
+width:200px;
+float:left;
+margin-left:14px;
+padding-left:14px;
+border-left:2px solid #EEEFE9; /*the main difference*/
+}
+
+
+/* FOOTER */
+
+#footer {
+height:115px;
+margin:10px 0px 10px 0px;
+}
+
+/********************************************
+				 Layout
+*********************************************/
+
+/* HEADER */
+
+/*active page*/
+#about a#about_nav,
+#projects a#projects_nav,
+#cv a#cv_nav,
+#interests a#interests_nav,
+#contact a#contact_nav {
+border-bottom:8px solid #eb5937;
+}
+
+#nav img {
+/*padding:0px 14px 10px 14px;*/
+margin:0px;
+}
+
+#nav ul li {
+float:left;
+list-style:none;
+height: auto;
+line-height: 36px;
+}
+
+#nav ul li a {
+line-height:36px;
+padding:10px 14px 10px 14px;
+margin:0px 0px 0px 5px;
+border-bottom:8px solid #d3cbbd;
+height: 20px;
+display: block;
+}
+
+#nav ul li a:hover {
+border-bottom:8px solid #eb5937;
+}
+
+#nav ul li a:active{
+border-bottom:8px solid #456f74;
+}
+
+
+/* BREADCRUMBS */
+
+
+
+
+
+/* FOOTER */
+#logo {
+float:left;
+padding:0px;
+margin:0px;
+}
+
+#logo img {
+padding:0px;
+margin:0px 10px 0px 0px;
+}
+
+#copyright {
+width:375px;
+float:left;
+}
+
+#copyright p {
+font:10px;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+line-height:12px;
+padding:0px 0px 8px 0px;
+margin:0px;
+}
+
+#copyright img.tagline {
+padding-bottom:8px;
+}
+
+#sub_nav {
+float:right;
+margin-top:0px;
+}
+
+#sub_nav ul li {
+display:inline;
+}
+
+#sub_nav ul li a {
+margin-left:15px;
+}
+
+#sub_nav ul li a:hover {
+color:#eb5937;
+/*border-bottom:1px dotted #A1B822;*/
+}
+
+#about a#about_subnav,
+#projects a#projects_subnav,
+#cv a#cv_subnav,
+#interests a#interests_subnav,
+#contact a#contact_subnav {
+color:#A1B822;
+border-bottom:1px dotted #eb5937;
+}
+
+/*    tables    */
+
+#gradient-style
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 10px;
+	margin: 45px;
+	width: 520px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#gradient-style th
+{
+	font-size: 10px;
+	font-weight: normal;
+	padding: 4px;
+	background: #b9c9fe url('../images/table-images/gradhead.png') repeat-x;
+	border-top: 2px solid #d3ddff;
+	border-bottom: 1px solid #fff;
+	color: #039;
+}
+#gradient-style td
+{
+	padding: 4px; 
+	border-bottom: 1px solid #fff;
+	color: #669;
+	border-top: 1px solid #fff;
+	background: #e8edff url('../images/table-images/gradback.png') repeat-x;
+}
+#gradient-style tfoot tr td
+{
+	background: #e8edff;
+	font-size: 12px;
+	color: #99c;
+}
+#gradient-style tbody tr:hover td
+{
+	background: #d0dafd url('../images/table-images/gradhover.png') repeat-x;
+	color: #339;
+}
+
+#background-image
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 15px;
+	width: 600px;
+	text-align: left;
+	border-collapse: collapse;
+/*	background: url('../images/table-images/blurry.jpg') 330px 59px no-repeat;*/
+}
+
+#background-image th
+{
+	padding: 12px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #eb5937;
+}
+#background-image td
+{
+	padding: 9px 12px;
+	color: #d3cbbd;
+	border-top: 1px solid #fff;
+}
+#background-image tfoot td
+{
+	font-size: 11px;
+}
+#background-image tbody td
+{
+	background: url('../images/table-images/back.png');
+}
+* html #background-image tbody td
+{
+	/* 
+	   ----------------------------
+		PUT THIS ON IE6 ONLY STYLE 
+		AS THE RULE INVALIDATES
+		YOUR STYLESHEET
+	   ----------------------------
+	*/
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='table-images/back.png',sizingMethod='crop');
+	background: none;
+}	
+#background-image tbody tr:hover td
+{
+	color: #eb5937;
+	background: none;
+}
