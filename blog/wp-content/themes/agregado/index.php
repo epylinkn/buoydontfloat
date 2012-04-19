@@ -43,7 +43,7 @@
 ?>
 </ul>
 
-<a href="<?php bloginfo('url'); ?>/archives" class="button">&laquo;Older Posts</a>
+<a href="<?php bloginfo('url'); ?>/?page_id=189" class="button">&laquo;Older Posts</a>
 </div><!--END CONTENT-->
 
 

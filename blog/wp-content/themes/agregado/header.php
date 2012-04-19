@@ -104,7 +104,7 @@ if (is_home() ) {
 	<?php wp_list_pages('title_li=&depth=1'); ?>
 	</ul>
 </li>
-<li><a href="<?php bloginfo('url'); ?>/archives" id="icon-archives" title="Browse Archives">Browse Archives</a></li>
+<li><a href="<?php bloginfo('url'); ?>/?page_id=189" id="icon-archives" title="Browse Archives">Browse Archives</a></li>
 <li><a href="#" id="icon-search" title="Search">Search</a>
 	<ul class="children" id="searchmenu">
 	<li><?php include (TEMPLATEPATH . '/searchform.php'); ?></li>
